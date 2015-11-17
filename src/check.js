@@ -44,8 +44,6 @@ function getMethods() {
 
         containsValues: function (values) {
             if (isRelevantPrototype(this, Array.prototype, Object.prototype)) {
-                var thisKeys = Object.keys(this);
-                var count = 0;
                 for (var i = 0; i < values.length; i++) {
                     if (this.indexOf(values[i]) === -1) {
                         return false;
