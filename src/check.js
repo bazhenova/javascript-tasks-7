@@ -12,7 +12,7 @@ exports.init = function () {
                     for (var i = 0; i < functions.length; i++) {
                         notMethods[functions[i]] = function () {
                             return !notMethods[functions[i]];
-                        }
+                        };
                     }
                     return notMethods;
                 }
